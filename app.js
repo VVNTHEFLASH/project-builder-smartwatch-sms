@@ -1,3 +1,15 @@
+function TimeAndDate() {
+//lets get the date
+var date = new Date();
+//get the time form date
+var hours = date.getHours();
+var minutes = date.getMinutes();
+// console.log(hours+':'+minutes);
+var time = document.getElementById('span-time');
+time.textContent = hours+':'+minutes;
+setInterval(TimeAndDate, 1000)
+}
+TimeAndDate();
 //Lets Create Onclick Function for Label
 //get the elements by Id
 var btnHtml = document.getElementById('btn-1');
@@ -9,18 +21,25 @@ btnCss.addEventListener('click', cssClick);
 btnJava.addEventListener('click', javaClick);
 //create function to click event
 function htmlClick() {
+    //get the div for removing it.
     var smsBox = document.getElementsByClassName('sms-box')[0];
+    //remove the smsbox
     smsBox.style.display = 'none';
+    //create new div
     var div = document.createElement('div');
     div.className = 'message';
     // console.log(div)
+    //get the sms to append the new div
     var sms = document.getElementsByClassName('sms')[0];
+    //create para element
     var message = document.createElement('p');
     message.innerHTML = "Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.";
     message.className = 'Message';
+    //create line element
     var line = document.createElement('hr');
-    // console.log(message);
+    // append the div
     sms.appendChild(div);
+    //append the child message and line
     div.appendChild(message);
     div.appendChild(line);
 }
