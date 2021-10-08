@@ -76,3 +76,15 @@ label{
 .fa-music,.fa-clock {
     color: gray;
 }
+.message {
+    color: black;
+    width: 220px;
+    position: relative;
+    top: 25px;
+    left: 5px;
+}
+.Message {
+    color: gray;
+    width: 210px;
+    font-size: small;
+}
