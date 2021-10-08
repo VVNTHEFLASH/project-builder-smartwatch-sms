@@ -24,7 +24,7 @@
     background: white;
 }
 .out-box {
-    background: grey;
+    background: rgb(49, 48, 48);
     height: 320px;
     width: 250px;
     display: flex;
@@ -48,19 +48,23 @@
     border-radius: 20%;
     background-color: white;
     position: relative;
-    bottom: 20px;
+    bottom: 10px;
 }
 label,hr{
     color: #665c5c;
-    margin: 20px;
+    margin: 15px;
+}
+label{
+    cursor: pointer;
 }
 #span-time {
     position: relative;
-    bottom: 20px;
+    bottom: 11px;
+    font-size: small;
 }
 .sms-box {
     position: relative;
-    top: 20px;
+    top: 25px;
     right: 10px;
 }
 .icons {
